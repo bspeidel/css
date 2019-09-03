@@ -48,15 +48,15 @@ Use tools such as the W3C CSS validator to test: https://jigsaw.w3.org/css-valid
 </p>
 
 ## Class names
-* Keep classes lowercase and use dashes (not underscores or camelCase). Dashes serve as natural breaks in related class (e.g., .btn and .btn-danger).
-* Avoid excessive and arbitrary shorthand notation (.btn is useful for button, but .s doesn't mean anything).
+* Keep classes lowercase and use dashes (not underscores or camelCase). Dashes serve as natural breaks in related class (e.g., `.btn` and `.btn-danger`).
+* Avoid excessive and arbitrary shorthand notation (`.btn` is useful for button, but `.s` doesn't mean anything).
 * Keep classes as short and succinct as possible.
 * Use meaningful names; use structural or purposeful names over presentational.
 * Prefix classes based on the closest parent or base class.
 
 ## Variables
 
-Prefer dash-cased variable names (e.g. $my-variable) over camelCased or snake_cased variable names. It is acceptable to prefix variable names that are intended to be used only within the same file with an underscore (e.g. $_my-variable).
+Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_cased variable names.
 
 > It's also useful to apply many of these same rules when creating Sass and Less variable names.
 
@@ -70,11 +70,11 @@ Prefer dash-cased variable names (e.g. $my-variable) over camelCased or snake_ca
 * Use a semicolon after every declaration.
 * Use single `''` rather than double `""` quotation marks for attribute selectors and property values.
 * Use shorthand properties where possible.
-* Put 0s in front of values or lengths between -1 and 1 (e.g., font-size: 0.8em;).
-* Where allowed, avoid specifying units for zero-values (e.g., margin: 0).
+* Put 0s in front of values or lengths between -1 and 1 (e.g., `font-size: 0.8em;`).
+* Where allowed, avoid specifying units for zero-values (e.g., `margin: 0`).
 * Use 0 instead of none to specify that a style has no border.
 * Write detailed comments for code that isn't self-documenting (e.g., compatibility or browser-specific hacks).
-* Use lowercase and shorthand hex values (e.g., #aaa).
+* Use lowercase and shorthand hex values (e.g., `#aaa`).
 
 ### Bad
 `@import "../main";`
