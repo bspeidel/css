@@ -1,4 +1,4 @@
-# CSS & SASS coding style
+# CSS / Sass Styleguide
 
 This document defines formatting and style rules. It aims at improving collaboration and code quality.
 
