@@ -4,6 +4,7 @@ This document defines formatting and style rules. It aims at improving collabora
 
 ## Terminology
 ![selector](https://gitlab.1blick.de/projekte/tarifair/uploads/eb954a811742887ad12545cc50c69f22/selector.gif)
+
 ### Rule declaration
 A “rule declaration” is the name given to a selector (or a group of selectors) with an accompanying group of properties. Here's an example:
 
@@ -32,20 +33,6 @@ Finally, properties are what give the selected elements of a rule declaration th
 }`
 
 for more information about CSS: https://www.w3schools.com/css/default.asp 
-
-## CSS Validity
-Use valid CSS where possible.
-
-Unless dealing with CSS validator bugs or requiring proprietary syntax, use valid CSS code.
-
-Use tools such as the W3C CSS validator to test: https://jigsaw.w3.org/css-validator/
-<p>
-<a href="http://jigsaw.w3.org/css-validator/check/referer">
-    <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="CSS Valide !" />
-    </a>
-</p>
 
 ## CSS
 
@@ -161,16 +148,30 @@ Use tools such as the W3C CSS validator to test: https://jigsaw.w3.org/css-valid
   
 ### Comment
 
-- Prefer line comments (// in Sass-land) to block comments.
-- Prefer comments on their own line. Avoid end-of-line comments.
-- Write detailed comments for code that isn't self-documenting:
--- Uses of z-index
--- Compatibility or browser-specific hacks
+* Prefer line comments (// in Sass-land) to block comments.
+* Prefer comments on their own line. Avoid end-of-line comments.
+* Write detailed comments for code that isn't self-documenting:
+  * Uses of z-index
+  * Compatibility or browser-specific hacks
   
 ### ID selectors
 While it is possible to select elements by ID in CSS, it should generally be considered an anti-pattern. ID selectors introduce an unnecessarily high level of specificity to your rule declarations, and they are not reusable.
 
 For more on this subject, read CSS Wizardry's article on dealing with specificity: https://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/
+
+### CSS Validity
+Use valid CSS where possible.
+
+Unless dealing with CSS validator bugs or requiring proprietary syntax, use valid CSS code.
+
+Use tools such as the W3C CSS validator to test: https://jigsaw.w3.org/css-validator/
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="CSS Valide !" />
+    </a>
+</p>
   
 ## SASS
 
