@@ -47,20 +47,16 @@ Use tools such as the W3C CSS validator to test: https://jigsaw.w3.org/css-valid
     </a>
 </p>
 
-## Class names
+## CSS
+
+### Class names
 * Keep classes lowercase and use dashes (not underscores or camelCase). Dashes serve as natural breaks in related class (e.g., `.btn` and `.btn-danger`).
 * Avoid excessive and arbitrary shorthand notation (`.btn` is useful for button, but `.s` doesn't mean anything).
 * Keep classes as short and succinct as possible.
 * Use meaningful names; use structural or purposeful names over presentational.
 * Prefix classes based on the closest parent or base class.
 
-## Variables
-
-Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_cased variable names.
-
-> It's also useful to apply many of these same rules when creating Sass and Less variable names.
-
-## Formatting
+### Formatting
 * Use soft tabs (2 spaces) for indentation.
 * When using multiple selectors in a rule declaration, give each selector its own line.
 * Put a space before the opening brace `{` in rule declarations.
@@ -73,7 +69,6 @@ Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_
 * Put 0s in front of values or lengths between -1 and 1 (e.g., `font-size: 0.8em;`).
 * Where allowed, avoid specifying units for zero-values (e.g., `margin: 0`).
 * Use 0 instead of none to specify that a style has no border.
-* Write detailed comments for code that isn't self-documenting (e.g., compatibility or browser-specific hacks).
 * Use lowercase and shorthand hex values (e.g., `#aaa`).
 
 ### Bad
@@ -163,8 +158,34 @@ Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_
     // 8.
     transform: translate(-50%, 0%);
   }`
+  
+### Comment
 
-## Nested selectors
+- Prefer line comments (// in Sass-land) to block comments.
+- Prefer comments on their own line. Avoid end-of-line comments.
+- Write detailed comments for code that isn't self-documenting:
+-- Uses of z-index
+-- Compatibility or browser-specific hacks
+  
+### ID selectors
+While it is possible to select elements by ID in CSS, it should generally be considered an anti-pattern. ID selectors introduce an unnecessarily high level of specificity to your rule declarations, and they are not reusable.
+
+For more on this subject, read CSS Wizardry's article on dealing with specificity: https://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/
+  
+## SASS
+
+### Syntax
+
+Use the .scss syntax, never the original .sass syntax
+Order your regular CSS and @include declarations logically (see below)
+
+### Variables
+
+Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_cased variable names.
+
+> It's also useful to apply many of these same rules when creating Sass and Less variable names.
+
+### Nested selectors
 Nested selectors, if necessary, go last, and nothing goes after them. Add whitespace between your rule declarations and nested selectors, as well as between adjacent nested selectors. Apply the same guidelines as above to your nested selectors.
 
 `.btn {
@@ -188,11 +209,6 @@ Do not nest selectors more than three levels deep.
 }`
 
 never nest ID selectors!
-
-## ID selectors
-While it is possible to select elements by ID in CSS, it should generally be considered an anti-pattern. ID selectors introduce an unnecessarily high level of specificity to your rule declarations, and they are not reusable.
-
-For more on this subject, read CSS Wizardry's article on dealing with specificity: https://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/
 
 ## Editor preferences
 Set your editor to the following settings to avoid common code inconsistencies and dirty diffs:
