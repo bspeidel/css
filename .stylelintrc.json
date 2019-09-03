@@ -1,0 +1,169 @@
+{
+  "plugins": ["stylelint-order", "stylelint-prettier"],
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "rules": {
+    "prettier/prettier": true,
+    "comment-empty-line-before": ["always", { "except": ["first-nested"] }],
+    "rule-empty-line-before": ["always", { "except": ["after-single-line-comment", "first-nested"] }],
+    "number-leading-zero": "always",
+    "max-nesting-depth": 3,
+    "selector-class-pattern": "[a-z]+",
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["function", "if", "each", "include", "mixin"]
+      }
+    ],
+    "order/properties-order": [
+      "display",
+      "visibility",
+      "float",
+      "clear",
+
+      "position",
+      {
+        "properties": ["top", "right", "bottom", "left"]
+      },
+      {
+        "properties": ["order", "flex-grow", "flex-shrink", "flex-basis", "flex", "align-self"]
+      },
+
+      "z-index",
+
+      {
+        "properties": ["width", "min-width", "max-width", "height", "min-height", "max-height"]
+      },
+
+      "box-sizing",
+
+      {
+        "properties": ["margin", "margin-top", "margin-right", "margin-bottom", "margin-left"]
+      },
+      {
+        "properties": ["padding", "padding-top", "padding-right", "padding-bottom", "padding-left"]
+      },
+      {
+        "properties": [
+          "border",
+          "border-top",
+          "border-right",
+          "border-bottom",
+          "border-left",
+
+          "border-syle",
+          "border-top-style",
+          "border-right-style",
+          "border-bottom-style",
+          "border-left-style",
+
+          "border-width",
+          "border-top-width",
+          "border-right-width",
+          "border-bottom-width",
+          "border-left-width",
+
+          "border-color",
+          "border-top-color",
+          "border-right-color",
+          "border-bottom-color",
+          "border-left-color",
+
+          "border-image",
+          "border-image-width",
+          "border-image-outset",
+          "border-image-repeat",
+          "border-image-source",
+          "border-image-outset",
+
+          "border-radius",
+          "border-top-left-radius",
+          "border-top-right-radius",
+          "border-bottom-left-radius",
+          "border-bottom-right-radius"
+        ]
+      },
+      {
+        "properties": ["outline", "outline-width", "outline-style", "outline-color", "outline-offset"]
+      },
+      {
+        "properties": ["overflow", "overflow-x", "overflow-y", "overflow-style"]
+      },
+      {
+        "properties": ["flex-direction", "flex-wrap", "flex-flow", "justify-content", "align-items", "align-content"]
+      },
+      {
+        "properties": [
+          "column-count",
+          "column-fill",
+          "column-gap",
+          "column-rule",
+          "column-rule-color",
+          "column-rule-style",
+          "column-rule-width",
+          "column-span",
+          "column-width",
+          "columns"
+        ]
+      },
+      {
+        "properties": ["list-style", "list-style-image", "list-style-position", "list-style-type"]
+      },
+      {
+        "properties": ["border-collapse", "border-spacing", "caption-side", "empty-cells", "table-layout"]
+      },
+
+      "line-height",
+
+      {
+        "properties": ["color", "font", "font-family", "font-size", "font-weight", "font-align", "font-variant"]
+      },
+      {
+        "properties": [
+          "direction",
+          "text-align",
+          "text-index",
+          "text-transform",
+          "text-decoration",
+          "text-overflow",
+          "text-shadow",
+          "text-wrap",
+          "word-break",
+          "word-wrap",
+          "letter-spacing",
+          "word-spacing",
+          "white-space",
+          "vertical-align"
+        ]
+      },
+      {
+        "properties": [
+          "background",
+          "background-position",
+          "background-attachment",
+          "background-clip",
+          "background-origin",
+          "background-size",
+          "background-color",
+          "background-image",
+          "background-repeat"
+        ]
+      },
+
+      "opacity",
+      "cursor",
+      "content",
+      "quotes",
+      "box-shadow",
+
+      {
+        "properties": [
+          "transition",
+          "transition-property",
+          "transition-duration",
+          "transition-timing-function",
+          "transition-delay"
+        ]
+      }
+    ]
+  }
+}

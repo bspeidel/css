@@ -227,6 +227,7 @@ If you’re editing code, take a few minutes to look at the code around you and 
 - stylelint: https://github.com/stylelint/stylelint
 - stylelint config stantard: https://github.com/stylelint/stylelint-config-standard
 - stylelint order: https://github.com/hudochenkov/stylelint-order
+- stylelint-prettier: https://github.com/prettier/stylelint-prettier
 - stylelint rules: [stylelint-config](/uploads/f2b9bc659e54d2f7d7ed8314e7df61bc/stylelint-config.txt)
 
 ##### Source 
