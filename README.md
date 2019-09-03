@@ -3,7 +3,7 @@
 This document defines formatting and style rules. It aims at improving collaboration and code quality.
 
 ## Terminology
-![selector](/uploads/eb954a811742887ad12545cc50c69f22/selector.gif)
+![selector](https://gitlab.1blick.de/projekte/tarifair/uploads/eb954a811742887ad12545cc50c69f22/selector.gif)
 ### Rule declaration
 A “rule declaration” is the name given to a selector (or a group of selectors) with an accompanying group of properties. Here's an example:
 
